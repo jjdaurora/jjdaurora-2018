@@ -1,0 +1,2 @@
+webpackJsonp([35783957827783],{210:function(e,a,t){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}a.__esModule=!0;var n=t(2),u=l(n),r=t(64),d=(l(r),function(){return u.default.createElement("header",{className:"home-wrap"},u.default.createElement("h2",null,"i'm a web developer"),u.default.createElement("p",null,"in cleveland, oh"),u.default.createElement("div",{className:"branding-image"}))});a.default=d,e.exports=a.default}});
+//# sourceMappingURL=component---src-pages-index-js-5f813affb4ce2eb34769.js.map
