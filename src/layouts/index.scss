@@ -57,6 +57,7 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         width: 30%;
     }
 }
@@ -84,7 +85,7 @@ nav {
 
 .about-wrap {
   align-content: center;
-  padding: 0 10%;
+  padding: 2% 5% 5% 5%;
   flex: 1;
 
     h2 {
