@@ -12,187 +12,39 @@ $primaryFont: 'IBM Plex Mono',monospace;
 
 $secondaryFont: 'Hammersmith One', sans-serif;
 
-html {
-  height: 100%;
-}
 
 body {
-    color: $primaryBackgroundColor;
-    font-family: $primaryFont;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
+  color: $primaryBackgroundColor;
+  font-family: $primaryFont;
+  // flexbox solution to sticky footer -- refer to `.site-content`
+  .site {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: $pageColor;
-
-}
-
-a {
-  text-decoration: none;
-  color: $primaryBackgroundColor;
-
-  a:hover {
-   color: $secondaryFontColor;
   }
 }
 
- 
-ul {
-  list-style-type: none;
+.site_content {
+  flex: 1;
 }
-
-// navbar style
-// nav {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   background: $secondaryFontColor;
-//     ul {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-around;
-//         align-items: center;
-//         width: 30%;
-//     }
-// }
-
-.nav-container {
+// navbar
+.list_nav-list {
   display: flex;
-}
-
-.search {
-  flex: 1;
-}
-.nav-container > li {
-  flex: 1;
-}
-
-// home page  
-
-.home-wrap {
-      padding: 100px 10%;
-      font-family: $primaryFont;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      flex: 1;
-      align-items: center;
-   
-    .branding-image {
-      background-image: url('../../public/static/jj-daurora-headshot.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 120px;
-      height: 220px;
-      width: 220px;
-    }
-}
-
-.about-wrap {
+  flex-direction: row;
+  justify-content: space-evenly;
   align-content: center;
-  padding: 2% 5% 5% 5%;
-  flex: 1;
-
-    h2 {
-      text-align: center;
-    }
-
-    p {
-      margin-bottom: 5px;
-    }
-    
+  flex-wrap: wrap;
 }
 
-.projects-wrap {
-  display: flex;
-  flex: 1;
-  padding: 0 2%;
-  flex-direction: column;
-  align-items: center;
-
+.list_nav-list-item {
+  list-style-type: none;
+  padding: 0 1.0rem;
 }
 
-.contact-wrap {
-  padding: 25px;
-  text-align: center;
-  flex: 1;
+.list_nav-list-item--small {
+  font-size: .85em;
+  padding: 0 1.0rem;
+  align-self: center;
 }
 
-
-// footer styles
-
-
-.footer-wrap {
-    display: flex;
-    justify-content: space-between;
-  
-  
-
-    .footer-btn-group {
-        margin-left: 10px;
-    }
-  
-    p {
-      font-size: .75em;
-      margin-right: 5px;
-    }
-
-    button {
-    background-color: transparent;
-    border-color: $primaryBackgroundColor;
-    border-radius: 2px;
-    background-repeat:no-repeat;
-    cursor:pointer;
-    overflow: hidden;
-    outline: none;
-    margin: 5px;
-    background: $secondaryFontColor;
-    }
-}
-
-// @media screen and (max-width: 768px) {
-
-//     nav ul {
-//       width: 55.5%;
-//       font-size: .75em;
-//       }
-
-//       .projects-wrap {
-//         font-size: .85em;
-//       }
-
-
-// }
-
-// @media screen and (max-width: 430px) {
-//   nav ul {
-//     width: 75%;
-//     margin-top: 0px;
-//   }
-// }
-
-@media all and (max-width: 400px) {
-  .nav-container>li {
-    flex-basis: 100%;
-  }
-
-  .search {
-    order: 1;
-  }
-}
-
-// @media all and (max-width: 600px) {
-
-//   .nav-container {
-//     flex-wrap: wrap;
-//   }
-
-//   .nav-container>li {
-//     flex-basis: 50%;
-//   }
-// }
+//footer 

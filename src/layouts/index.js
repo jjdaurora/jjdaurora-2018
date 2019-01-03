@@ -9,7 +9,7 @@ import './index.scss'
 
 
 const Layout = ({ children, data }) => (
-  <div className="container">
+  <div className="site">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[

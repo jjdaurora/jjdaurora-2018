@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const NavBar = ({ siteTitle }) => (
     // <nav>
@@ -17,15 +17,11 @@ const NavBar = ({ siteTitle }) => (
     //     </ul>
     // </nav>
   <nav>
-    <ul className="nav-container">
-      <li>Home</li>
-      <li>Profile</li>
-      <li class="search">
-        <input type="text" class="search-input" placeholder="Search"/>
-    </li>
-        <li>Logout</li>
-   </ul>
+    <div className="list_nav-list">
+      <h1 className="list_nav-list-item">JJ D'Aurora</h1>
+      <div className="list_nav-list-item--small">Software Developer</div>
+   </div>
 </nav>
 )
 
-export default NavBar
+export default NavBar;
