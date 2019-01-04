@@ -1,20 +1,21 @@
 // import Google fonts
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 
 // Site thems, colors & variables
 $pageColor: #f9f9f9;
-$primaryBackgroundColor: #272728;
+// $primaryfon: #272728;
 $primaryFontColor: #1e1d1d;
-$secondaryFontColor: #68a2ff;
+$secondaryFontColor: #404040;
 
 $primaryFont: 'IBM Plex Mono',monospace;
+$secondaryFont: 'Source Sans Pro', sans-serif;
 
-$secondaryFont: 'Hammersmith One', sans-serif;
 
 
 body {
-  color: $primaryBackgroundColor;
+  color: $primaryFontColor;
   font-family: $primaryFont;
   // flexbox solution to sticky footer -- refer to `.site-content`
   .site {
@@ -26,25 +27,69 @@ body {
 
 .site_content {
   flex: 1;
+  font-family: $secondaryFont;
+  color: $secondaryFontColor;
+  // justify-content: flex-end;
 }
+
+.site_content-wrapper {
+  margin-top: 5%;
+  padding: 5% 0;
+  max-width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(153, 153, 153, 0.2);
+  transform: translate(2.5%);
+}
+
+.site_content-text {
+  position: relative;
+  padding: 5% 5%;
+  align-self: center;
+}
+
+// .site_content-text--center {
+//   text-align: center;
+// }
 // navbar
 .list_nav-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .list_nav-list-item {
   list-style-type: none;
-  padding: 0 1.0rem;
 }
 
 .list_nav-list-item--small {
-  font-size: .85em;
-  padding: 0 1.0rem;
-  align-self: center;
+  line-height: 1.75;
 }
 
+.image_headshot {
+  background-image: url('../../public/static/jj-daurora-headshot.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 120px;
+  height: 220px;
+  width: 220px;
+}
 //footer 
+.btn_footer-btn {
+  background-color: #7EBAF7;
+  margin: 0 .5%;
+  border-color: $primaryFontColor;
+  border-radius: 3px;
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: #F5BFE8;
+    }
+  }
+}

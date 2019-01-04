@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="footer_wrapper">
-        <div className="footer-btns">
-        <button><a href="https://twitter.com/jjdaurora" target="_blank">Twitter</a></button>
-        <button><a href="https://medium.com/@jjdaurora" target="_blank">Medium</a></button>
-              <button><a href="https://www.linkedin.com/in/jjdaurora/" target="_blank">LinkedIn</a></button>
+    <footer className="wrapper_footer">
+        <div className="btns_footer-btns">
+        <button className="btn_footer-btn"><a href="https://twitter.com/jjdaurora" target="_blank">Twitter</a></button>
+        <button className="btn_footer-btn"><a href="https://medium.com/@jjdaurora" target="_blank">Medium</a></button>
+              <button className="btn_footer-btn"><a href="https://www.linkedin.com/in/jjdaurora/" target="_blank">LinkedIn</a></button>
         </div>
-        <p>JJ D'Aurora 2018  &copy;</p>
+        <p>JJ D'Aurora 2019  &copy;</p>
     </footer>
   )
 }
