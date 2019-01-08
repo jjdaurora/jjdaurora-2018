@@ -3,21 +3,27 @@ import Link from 'gatsby-link'
 
 const IndexPage = () => (
 
-    <div className="site_content">
-        <main className="site_content-wrapper">
+<div className="site_content">
+    <main className="site_content-wrapper">
         <div className="image_headshot"></div>
         <div className="site_content-text">
-            <p>I'm a web developer with a focus in front end technologies, design implementation, and solving user challenges.</p>
-            <p> I care about transportation, the future of tech in our cities, and how to thrive in a world of constant change.</p>
-            <p className="site_content-text--center"> <strong>Click below to learn more about me </strong></p>
+            <p>I'm a software engineer living in Cleveland, Ohio. I focus on front end technologies and user experiece, but I find myself on all parts of the tech stack.</p>
+            <p> I care about transportation and the future of our cities. You can find me making amateur music in my basement studio or pretending I'm a good cook.</p>
         </div>
-        <div className="site_content_icons">
-            <span>places lived</span>
-            <span>likes</span>
-            <span>projects</span>
-        </div>
-        </main>
-    </div>
+        <section className="site_facts-headers">
+            <h3 className="site_facts-header">
+                Facts about JJ
+            </h3>
+            <h3 className="site_facts-header">
+                Skills + Tech
+            </h3>
+            <h3 className="site_facts-header">
+                Projects
+            </h3>
+        </section>
+    </main>
+
+</div>
 )
 
 export default IndexPage

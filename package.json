@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bloomer": "^0.6.5",
+    "bulma": "^0.7.2",
     "gatsby": "^1.9.247",
     "gatsby-cli": "^1.1.51",
     "gatsby-link": "^1.6.40",

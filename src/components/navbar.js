@@ -19,9 +19,10 @@ const NavBar = ({ siteTitle }) => (
   <nav>
     <div className="list_nav-list">
       <h1 className="list_nav-list-item">JJ D'Aurora</h1>
-      <small className="list_nav-list-item--small">developer | writer | learner</small>
-      <small className="list_nav-list-item--small">in cleveland, ohio</small>
-   </div>
+      <div className="list_nav-list-tagline">
+        <div>developer ~ writer  ~ learner</div>
+      </div>
+    </div>
 </nav>
 )
 

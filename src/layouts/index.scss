@@ -4,17 +4,25 @@
 
 
 // Site thems, colors & variables
-$pageColor: #f9f9f9;
+$pageColor: #191919;
 // $primaryfon: #272728;
-$primaryFontColor: #1e1d1d;
-$secondaryFontColor: #404040;
+$primaryFontColor: #F8F8FF;
+$secondaryFontColor: #F8F8FF
+;
 
 $primaryFont: 'IBM Plex Mono',monospace;
-$secondaryFont: 'Source Sans Pro', sans-serif;
-
+$secondaryFont: -apple-system,
+BlinkMacSystemFont,
+SF Pro Display,
+Roboto,
+Helvetica Neue,
+sans-serif;
 
 
 body {
+  background-color: $pageColor;
+  border: 5px solid white;
+  padding: 2%;
   color: $primaryFontColor;
   font-family: $primaryFont;
   // flexbox solution to sticky footer -- refer to `.site-content`
@@ -33,41 +41,45 @@ body {
 }
 
 .site_content-wrapper {
-  margin-top: 5%;
-  padding: 5% 0;
-  max-width: 95%;
+  margin-top: 2%;
+  padding: 2% 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(153, 153, 153, 0.2);
-  transform: translate(2.5%);
+  border-radius: 6px;
 }
 
 .site_content-text {
-  position: relative;
-  padding: 5% 5%;
   align-self: center;
+  margin: 0 auto 0 0;
+  width: 60%;
+  line-height: 1.5;
+  font-weight: 425;
 }
-
-// .site_content-text--center {
-//   text-align: center;
-// }
-// navbar
-.list_nav-list {
+.site_facts-headers {
   display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  font-family: $primaryFont;
+  margin-top: 2%;
   flex-wrap: wrap;
 }
 
-.list_nav-list-item {
-  list-style-type: none;
+
+.site_content-text--center {
+  font-family: $primaryFont;
 }
 
-.list_nav-list-item--small {
-  line-height: 1.75;
+
+.list_nav-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.list_nav-list-tagline {
+  align-self: center;
+  padding-left: 2%;
 }
 
 .image_headshot {
@@ -75,14 +87,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 120px;
-  height: 220px;
-  width: 220px;
+  -webkit-border-radius: 120px;
+  height: 10em;
+  width: 10em;
+  margin: 2% auto;
+  border: 3px solid $primaryFontColor;
 }
 //footer 
 .btn_footer-btn {
   background-color: #7EBAF7;
+  padding: .25em 1em;
   margin: 0 .5%;
-  border-color: $primaryFontColor;
+  border: 2px solid $primaryFontColor;
   border-radius: 3px;
   a {
     color: inherit;
