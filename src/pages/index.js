@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Gallery from '../components/gallery'
 
 const IndexPage = () => (
 
@@ -13,8 +14,8 @@ const IndexPage = () => (
         <section className="site_facts-headers">
             <h3 className="site_facts-header">
                 Facts about JJ
-            </h3>
-            <h3 className="site_facts-header">
+            </h3> 
+          <h3 className="site_facts-header">
                 Skills + Tech
             </h3>
             <h3 className="site_facts-header">

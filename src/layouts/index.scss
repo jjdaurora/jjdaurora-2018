@@ -7,10 +7,9 @@
 $pageColor: #191919;
 // $primaryfon: #272728;
 $primaryFontColor: #F8F8FF;
-$secondaryFontColor: #F8F8FF
-;
+$secondaryFontColor: #F8F8FF;
 
-$primaryFont: 'IBM Plex Mono',monospace;
+$primaryFont: 'Roboto', sans-serif;
 $secondaryFont: -apple-system,
 BlinkMacSystemFont,
 SF Pro Display,
@@ -60,7 +59,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  font-family: $primaryFont;
+  // font-family: $primaryFont;
   margin-top: 2%;
   flex-wrap: wrap;
 }
@@ -91,7 +90,7 @@ body {
   height: 10em;
   width: 10em;
   margin: 2% auto;
-  border: 3px solid $primaryFontColor;
+  border: 2px solid $primaryFontColor;
 }
 //footer 
 .btn_footer-btn {
@@ -109,3 +108,46 @@ body {
     }
   }
 }
+
+
+// #card {
+//   width: 200px;
+//   height: 200px;
+//   display: flex;
+//   display: inline-block;
+//   border: 1px solid white;
+//   overflow: hidden;
+// }
+
+// #card {
+//   width: 150px;
+//   height: 200px;
+//   margin: 50px auto;
+//   // background: black;
+//   // box-shadow: 0px 0px 50px -20px rgba(white, 0.5);
+//   cursor: pointer;
+//  padding: 2%;
+//   // box-sizing: border-box;
+//   // position: relative;
+//   display: inline-block;
+//   border: 2px solid white;
+//   border-radius: 25px;
+//   overflow: hidden;
+//   transition: all ease 0.2s;
+ 
+
+//   &:hover {
+//     box-shadow: 0px 0px 50px -10px rgba(pink, 0.5);
+
+//     h1 span {
+//       color: #304E1C;
+//     }
+//   }
+// }
+
+// #content-card {
+//    display: flex;
+//    align-items: center;
+//   //  margin: 0 2%;
+  
+// }
