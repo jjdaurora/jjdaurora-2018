@@ -67,7 +67,7 @@ nav {
 // home page  
 
 .home-wrap {
-      padding: 50px 10%;
+      padding: 2.5rem 0;
       font-family: $primaryFont;
       display: flex;
       // flex-direction: column;
@@ -87,16 +87,14 @@ nav {
     }
 }
 
-.home-wrap__content, .links {
+.home-wrap__content {
   font-family: $secondaryFont;
   // text-align: center;
-  padding: 0 3.0rem;
+  padding: 0 10%;
 }
 
 .links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
 }
 
 .about-wrap {
@@ -149,7 +147,6 @@ nav {
     }
 
     button {
-    color: white;
     background-color: transparent;
     border-color: $primaryBackgroundColor;
     border-radius: 2px;
