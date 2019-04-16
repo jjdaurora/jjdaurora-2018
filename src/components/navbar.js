@@ -3,18 +3,18 @@ import Link from 'gatsby-link'
 
 const NavBar = ({ siteTitle }) => (
     <nav>
-      <h1><Link to="/">{siteTitle}</Link></h1>
-        <ul>
+      {/* <h1><Link to="/">{siteTitle}</Link></h1> */}
+        {/* <ul>
           <li>
-            <Link to="/about/">About</Link>
+            Software Developer
           </li>
           <li>
-            <Link to="/projects/">Projects</Link>
+            O
           </li>
           <li>
             <Link to="/contact/">Contact</Link>
           </li>
-        </ul>
+        </ul> */}
     </nav>
 )
 

@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "abd1fe85e02c9936c559d9a162a4e771",
+        "contentDigest": "4547b19426828f20e8da251eac148c72",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -52,45 +52,6 @@
       "children": [],
       "internal": {
         "contentDigest": "33d96b2406d66bdbac7f5adb81a96ab8",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin component-page-creator": {
-      "resolve": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby/dist/internal-plugins/component-page-creator",
-      "id": "Plugin component-page-creator",
-      "name": "component-page-creator",
-      "version": "1.0.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "createPagesStatefully"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby/dist/internal-plugins/component-page-creator",
-      "packageJson": {
-        "name": "component-page-creator",
-        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
-        "version": "1.0.0",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin"
-        ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-        "license": "MIT",
-        "dependencies": [],
-        "devDependencies": [],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "0efa0357e43ba5f788d8d9ae0154ff2c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -465,6 +426,85 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "325fc1bc69fd1814ac9d9bd9e1c0f4c4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Site": {
       "siteMetadata": {
         "title": "JJ D'Aurora"
@@ -473,12 +513,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-05-15T02:39:37.722Z",
+      "buildTime": "2019-04-16T01:40:23.291Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e6ed8ede6d2e406efa05b38c8541b8e8",
+        "contentDigest": "a99c37a21618054d82a2b932dea679d9",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -491,16 +531,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/404.js",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "14807249592f14b6e9f3e355818a5f0d",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "f3829e944aba38f2253eed11ed6244ed",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -512,16 +552,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/about.js",
       "componentChunkName": "component---src-pages-about-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/about.js",
       "id": "SitePage /about/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e4aa4b548db7bb87b8be4ae4fe0015c6",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "78106b74ebb54cfa6faea9b08877c1c6",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -533,16 +573,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/contact.js",
       "componentChunkName": "component---src-pages-contact-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/contact.js",
       "id": "SitePage /contact/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "60f113d9e83a3dcfbeba6019a23414cd",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "97e3ec0f5e660ee08b3426f061c6e364",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -554,16 +594,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/index.js",
       "id": "SitePage /",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "da10fa53571c7ffca1d5ace7e1a5a4ee",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "d41869fe390f285c11abd68ce0c2529c",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -575,16 +615,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/page-2.js",
       "componentChunkName": "component---src-pages-page-2-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/page-2.js",
       "id": "SitePage /page-2/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8194943241b45f3fb8cbbe593e18315a",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "0a9c2d26c70b233d82893341027f54d3",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -596,16 +636,16 @@
       "component": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/projects.js",
       "componentChunkName": "component---src-pages-projects-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/src/pages/projects.js",
       "id": "SitePage /projects/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "96414003cb13ee7804b9068b669644e6",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "9160bfb602c9fa69d675711400f7eff5",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -625,7 +665,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f66e456e803ccdbe7d984d2121e9ef25",
+        "contentDigest": "3808fb94ff97da135c8d6d20a04005b3",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -633,7 +673,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "24c5ba767f29670742991cf48a3f09e0"
+    "PLUGINS_HASH": "8b7bbeb58a02062733a501edb1759c06"
   },
   "componentDataDependencies": {
     "nodes": {
