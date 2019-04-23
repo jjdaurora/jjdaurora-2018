@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "abd1fe85e02c9936c559d9a162a4e771",
+        "contentDigest": "8ff979fbccfe0f9af88e2cd2901eb0b8",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -396,11 +396,81 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.18",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "UA-138863210-1"
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.18",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3cd420137c1080a0a3b31f467b46ec78",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/jjdaurora/dev/projects/jjdaurora-2018",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "7708d56536021040bd16fd7a67fb5e2b",
+      "version": "f00d5aed8de048af3d88a9a1d0400d61",
       "pluginOptions": {
         "plugins": []
       },
@@ -460,7 +530,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "55fd4bb3ef5c080b8701955756b17c8d",
+        "contentDigest": "5f5696c20a62f6d24239beda279ab34d",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -473,12 +543,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-05-15T02:39:37.722Z",
+      "buildTime": "2019-04-23T03:25:17.675Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "e6ed8ede6d2e406efa05b38c8541b8e8",
+        "contentDigest": "ea9fa9503801e5964fe0a7ddb7b63632",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -499,7 +569,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "14807249592f14b6e9f3e355818a5f0d",
+        "contentDigest": "0c3eeb5c0162757bd44504ee5246e41e",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -520,7 +590,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e4aa4b548db7bb87b8be4ae4fe0015c6",
+        "contentDigest": "bab6fea92f4accd319be21acb165f7e2",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -541,7 +611,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "60f113d9e83a3dcfbeba6019a23414cd",
+        "contentDigest": "5ba159e49e23d750f4601a9a31f77e9b",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -562,7 +632,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "da10fa53571c7ffca1d5ace7e1a5a4ee",
+        "contentDigest": "c48170adc65151a7cf2b6931248469d5",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -583,7 +653,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8194943241b45f3fb8cbbe593e18315a",
+        "contentDigest": "bf0925e323c157838a9ed076ae1ee57a",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -604,7 +674,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "96414003cb13ee7804b9068b669644e6",
+        "contentDigest": "ea1444b9ca295f78500d92d8687a849a",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -625,7 +695,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f66e456e803ccdbe7d984d2121e9ef25",
+        "contentDigest": "613125a78c541a2596d6be7eae658f9c",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -633,7 +703,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "24c5ba767f29670742991cf48a3f09e0"
+    "PLUGINS_HASH": "773621896ff1893e33772cd7aa76f379"
   },
   "componentDataDependencies": {
     "nodes": {

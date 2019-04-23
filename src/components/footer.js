@@ -1,14 +1,16 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 
 const Footer = () => {
   return (
     <footer className="footer-wrap">
         <div className="footer-btn-group">
-        <button><a href="https://twitter.com/jjdaurora" target="_blank">Twitter</a></button>
-        <button><a href="https://medium.com/@jjdaurora" target="_blank">Medium</a></button>
-              <button><a href="https://www.linkedin.com/in/jjdaurora/" target="_blank">LinkedIn</a></button>
+        <button><OutboundLink href="https://twitter.com/jjdaurora" target="_blank">Twitter</OutboundLink></button>
+        <button><OutboundLink href="https://github.com/jjdaurora" target="_blank">GitHub</OutboundLink></button>
+              <button><OutboundLink href="https://www.linkedin.com/in/jjdaurora/" target="_blank">LinkedIn</OutboundLink></button>
         </div>
-        <p>JJ D'Aurora 2018  &copy;</p>
+        <p>JJ D'Aurora 2019  &copy;</p>
     </footer>
   )
 }

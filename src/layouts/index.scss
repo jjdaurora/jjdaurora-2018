@@ -6,11 +6,16 @@
 $pageColor: #f9f9f9;
 $primaryBackgroundColor: #272728;
 $primaryFontColor: #1e1d1d;
-$secondaryFontColor: #68a2ff;
+$secondaryFontColor: #8E2D4A;
 
 $primaryFont: 'IBM Plex Mono',monospace;
 
-$secondaryFont: 'Hammersmith One', sans-serif;
+$secondaryFont: -apple-system,
+BlinkMacSystemFont,
+SF Pro Display,
+Roboto,
+Helvetica Neue,
+sans-serif;
 
 html {
   height: 100%;
@@ -41,9 +46,6 @@ a {
 }
 
  
-ul {
-  list-style-type: none;
-}
 // navbar style
 
 nav {
@@ -65,22 +67,34 @@ nav {
 // home page  
 
 .home-wrap {
-      padding: 100px 10%;
+      padding: 2.5rem 0;
       font-family: $primaryFont;
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       flex-wrap: wrap;
       flex: 1;
       align-items: center;
+      // justify-content: space-around;
    
     .branding-image {
       background-image: url('../../public/static/jj-daurora-headshot.png');
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 120px;
-      height: 220px;
-      width: 220px;
+      height: 150px;
+      width: 150px;
+      margin: auto;
     }
+}
+
+.home-wrap__content {
+  font-family: $secondaryFont;
+  // text-align: center;
+  padding: 0 10%;
+}
+
+.links {
+
 }
 
 .about-wrap {
@@ -126,7 +140,7 @@ nav {
     .footer-btn-group {
         margin-left: 10px;
     }
-  
+    
     p {
       font-size: .75em;
       margin-right: 5px;
@@ -141,7 +155,11 @@ nav {
     overflow: hidden;
     outline: none;
     margin: 5px;
-    background: $secondaryFontColor;
+    // background: $secondaryFontColor;
+    }
+
+    button:hover {
+      background-color: $secondaryFontColor;
     }
 }
 
