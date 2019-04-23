@@ -140,7 +140,7 @@ nav {
     .footer-btn-group {
         margin-left: 10px;
     }
-  
+    
     p {
       font-size: .75em;
       margin-right: 5px;
@@ -156,6 +156,10 @@ nav {
     outline: none;
     margin: 5px;
     // background: $secondaryFontColor;
+    }
+
+    button:hover {
+      background-color: $secondaryFontColor;
     }
 }
 

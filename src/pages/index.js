@@ -11,9 +11,9 @@ const IndexPage = () => (
     <div className="home-wrap__content">
       <h1>JJ D'Aurora</h1>
       <p>JJ D'Aurora is a full stack web developer at <a style={inlineStyle} href="https://www.brandmuscle.com">BrandMuscle</a>.</p>
-      <p>His work mostly centers on product development. Most recently, he developed an ecommerce shopping cart application built on Angular and .NET Core.
+      <p>His work mostly centers on software product development and implementations. Most recently, he and his team developed an e-commerce shopping cart application built on Angular and .NET Core.
       He approaches his work with a strong mix of business and technical aptitude, and he is always interested in engaging in new and exciting work.</p>
-      <p>He likes business, tech and philosophy, walking his dog, and debating just about anything.</p>
+      <p>When he isn't working on software, he can be found failing at his attempts in the kitchen or studying Chinese. He likes music, philosophy, walking his dog, and debating just about anything.</p>
       <div className="links">
         <p><a href="/static/Resume.pdf" style={inlineStyle} download>Resume</a></p>
         <p><a style={inlineStyle} href="mailto:jjdaurora@gmail.com">Contact me</a></p>
