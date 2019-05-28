@@ -674,14 +674,12 @@
       },
       "port": "8000",
       "host": "localhost",
-      "pathPrefix": "",
-      "polyfill": true,
       "buildTime": "2019-05-26T17:33:47.270Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "5463925a25c46760108eee8c74ea7ff3",
+        "contentDigest": "d4f067e85572656d598028dd6512cc6c",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
