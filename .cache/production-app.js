@@ -51,7 +51,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
     require(`./register-service-worker`)
   }
 
-  const navigate = (to, replace) => {
+  const navigateTo = to => {
     const location = createLocation(to, null, null, history.location)
     let { pathname } = location
     const redirect = redirectMap[pathname]
@@ -72,17 +72,13 @@ apiRunnerAsync(`onClientEntry`).then(() => {
       return
     }
 
-    const historyNavigateFunc = replace
-      ? window.___history.replace
-      : window.___history.push
-
     // Listen to loading events. If page resources load before
     // a second, navigate immediately.
     function eventHandler(e) {
       if (e.page.path === loader.getPage(pathname).path) {
         emitter.off(`onPostLoadPageResources`, eventHandler)
         clearTimeout(timeoutId)
-        historyNavigateFunc(location)
+        window.___history.push(location)
       }
     }
 
@@ -91,13 +87,13 @@ apiRunnerAsync(`onClientEntry`).then(() => {
     const timeoutId = setTimeout(() => {
       emitter.off(`onPostLoadPageResources`, eventHandler)
       emitter.emit(`onDelayedLoadPageResources`, { pathname })
-      historyNavigateFunc(location)
+      window.___history.push(location)
     }, 1000)
 
     if (loader.getResourcesForPathname(pathname)) {
       // The resources are already loaded so off we go.
       clearTimeout(timeoutId)
-      historyNavigateFunc(location)
+      window.___history.push(location)
     } else {
       // They're not loaded yet so let's add a listener for when
       // they finish loading.
@@ -106,9 +102,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
   }
 
   // window.___loadScriptsForPath = loadScriptsForPath
-  window.___push = (to) => navigate(to, false)
-  window.___replace = (to) => navigate(to, true)
-  window.___navigateTo = window.___push
+  window.___navigateTo = navigateTo
 
   // Call onRouteUpdate on the initial page load.
   apiRunner(`onRouteUpdate`, {
@@ -195,11 +189,7 @@ apiRunnerAsync(`onClientEntry`).then(() => {
 
     const NewRoot = apiRunner(`wrapRootComponent`, { Root }, Root)[0]
 
-    const renderer = apiRunner(
-      `replaceHydrateFunction`,
-      undefined,
-      ReactDOM.render
-    )[0]
+    const renderer = apiRunner(`replaceHydrateFunction`, undefined, ReactDOM.render)[0]
 
     domReady(() =>
       renderer(

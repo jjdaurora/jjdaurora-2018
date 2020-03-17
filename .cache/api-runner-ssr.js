@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/jjdaurora/dev/stuff/jjdaurora-2018/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/jjdaurora/dev/stuff/jjdaurora-2018/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-138863210-1"},
     },{
-      plugin: require('/Users/jjdaurora/dev/projects/jjdaurora-2018/node_modules/gatsby-plugin-google-tagmanager/gatsby-ssr'),
+      plugin: require('/Users/jjdaurora/dev/stuff/jjdaurora-2018/node_modules/gatsby-plugin-google-tagmanager/gatsby-ssr'),
       options: {"plugins":[],"id":"UA-138863210-1","includeInDevelopment":true},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

@@ -10,7 +10,7 @@ const Footer = () => {
         <button><OutboundLink href="https://github.com/jjdaurora" target="_blank">GitHub</OutboundLink></button>
               <button><OutboundLink href="https://www.linkedin.com/in/jjdaurora/" target="_blank">LinkedIn</OutboundLink></button>
         </div>
-        <p>JJ D'Aurora 2019  &copy;</p>
+        <p>JJ D'Aurora 2020  &copy;</p>
     </footer>
   )
 }

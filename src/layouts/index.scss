@@ -24,6 +24,7 @@ html {
 body {
     color: $primaryBackgroundColor;
     font-family: $primaryFont;
+    font-size: 1.5em;
     margin: 0;
     padding: 0;
 }
@@ -60,31 +61,31 @@ nav {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 30%;
+        width: 0%;
     }
 }
 
 // home page  
 
 .home-wrap {
-      padding: 2.5rem 0;
+      // padding: 2.5rem 0;
       font-family: $primaryFont;
       display: flex;
       // flex-direction: column;
       flex-wrap: wrap;
       flex: 1;
       align-items: center;
-      // justify-content: space-around;
+      justify-content: space-around;
    
-    .branding-image {
-      background-image: url('../../public/static/jj-daurora-headshot.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 120px;
-      height: 150px;
-      width: 150px;
-      margin: auto;
-    }
+    // .branding-image {
+    //   background-image: url('../../public/static/jj-daurora-headshot.png');
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   border-radius: 120px;
+    //   height: 150px;
+    //   width: 150px;
+    //   margin: auto;
+    // }
 }
 
 .home-wrap__content {
