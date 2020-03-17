@@ -9,12 +9,12 @@ module.exports = {
       precision: 8,
     },
   },  
-  {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-138863210-1",
-      },
-  },
+  // {
+  //     resolve: `gatsby-plugin-google-analytics`,
+  //     options: {
+  //       trackingId: "UA-138863210-1",
+  //     },
+  // },
     // {
     //   resolve: `gatsby-plugin-google-tagmanager`,
     //   options: {
